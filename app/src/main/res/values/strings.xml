@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">bee_work_2</string>
+    <string name="sign_in" translatable="false">sign in</string>
+    <string name="sign_up" translatable="false">sign up</string>
+    <string name="login" translatable="false">login_sign_in</string>
+    <string name="registration" translatable="false">registration_sign_up</string>
+    <string name="remember_password">remember password</string>
+</resources>

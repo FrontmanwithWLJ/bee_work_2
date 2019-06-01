@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <Button
+        android:id="@+id/logout"
+        android:text="Log out"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@mipmap/transparent"/>
+    <Button
+        android:textAlignment="center"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/transparent"
+        android:text="Choose"
+        android:textColor="@color/backGround"/>
+
+</RelativeLayout>

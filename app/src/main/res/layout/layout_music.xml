@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ListView
+        android:id="@+id/music_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/music_control"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp">
+
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/music_control"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="150dp">
+
+
+    <ImageView
+        android:id="@+id/p_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/music_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/p_picture"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/p_picture"
+            android:background="@android:color/transparent"
+            android:textStyle="italic"
+            android:singleLine="true"
+            android:text="暂无歌曲信息"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/music_up"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/music_pause"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/up"
+            app:srcCompat="@android:color/primary_text_dark" />
+            <ImageButton
+                android:id="@+id/music_pause"
+                android:background="@mipmap/pause"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/music_down"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@android:color/primary_text_dark" />
+            <ImageButton
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/down"
+                android:layout_gravity="center"
+                android:id="@+id/music_down"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@android:color/primary_text_dark" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

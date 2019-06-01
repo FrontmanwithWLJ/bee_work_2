@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SurfaceView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+        <LinearLayout
+            android:id="@+id/video_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/videoView"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/videoPlay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="▶"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/video_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="389dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="15dp"
+                android:max="100"
+                android:progress="0"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/video_time"/>
+            <TextView
+                android:id="@+id/video_time"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:text="00:00"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/video_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:layout_marginBottom="100dp">
+
+    </ListView>
+</LinearLayout>
